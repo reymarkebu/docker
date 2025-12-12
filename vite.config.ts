@@ -8,6 +8,11 @@ import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 
 export default defineConfig({
+  server: {
+    host: true,
+    port: 5173,
+    strictPort: true,
+  },
   plugins: [
     laravel({
       input: ['resources/js/app.ts'],
